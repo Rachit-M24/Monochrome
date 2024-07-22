@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import WeatherDisplay from "./WeatherDisplay";
-import Forecast from "./ForeCast";
+import WeatherDisplay from "../components/WeatherDisplay";
+import Forecast from "../components/ForeCast";
 
 const App = () => {
   const [city, setCity] = useState("");
@@ -9,7 +9,7 @@ const App = () => {
   const [error, setError] = useState(null);
 
   const fetchWeather = async () => {
-    const apiKey = "5aedbcadf5102e63e4d5d89d1e567b83"; // Replace with your OpenWeatherMap API key
+    const apiKey = "API_KEY"; // Replace with your OpenWeatherMap API key
     const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
     try {
