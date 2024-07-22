@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+}
+.main {
+  height: 10%;
+  width: 100%;
+  max-width: 1920px;
+}
+.navbar {
+  height: 8%;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 2vw;
+}
+.nav-links ul li p {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding: 3px;
+  text-decoration: none;
+  transition: all 1s ease-in-out;
+}
+
+.nav-links ul li {
+  position: relative;
+  overflow: hidden;
+}
+.back-cover {
+  height: 60px;
+  width: 82px;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  font-size: 20px;
+  font-weight: 600;
+  background: #000;
+  transform: rotateY(0deg);
+  transition: all 0.6s ease-in-out;
+}
+.nav-links ul li p:hover + .back-cover {
+  top: 0;
+  animation: nav-wavier 0.3s linear 1;
+}
+
+.active-link {
+  background-color: #333;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.secondary {
+  height: 90.35vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1920px;
+}
+.hero-title-section {
+  height: 100%;
+  width: 100%;
+}
+
+#intro-cover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  max-width: 1920px;
+  background: #000;
+}
+#intro-cover h1 {
+  position: absolute;
+  opacity: 0;
+  animation: text_animation 1s linear 1s;
+}
+#intro-cover h1:nth-child(2) {
+  animation-delay: 2s;
+}
+#intro-cover h1:nth-child(3) {
+  animation-delay: 3.4s;
+}
+@keyframes text_animation {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nav-wavier {
+  to {
+    transform: rotateY(180deg);
+  }
+  from {
+    transform: rotateY(0deg);
+  }
+}
+
+/*weather_report styling*/
+
+.span-box {
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.weekend-span {
+  padding: 4px;
+  width: 100px;
+}
