@@ -9,8 +9,15 @@ for trying out it locally on your laptop or computer.
    Note: you should  have node installed on your laptop/PC
    
 ```
-npm create vite@latest 
+npm create vite@latest
+cd the-app-name
+npm install
 ```
+or
+```
+npm i
+```
+
 after that you can install the tailwind in your vite react app otherwise you can add tailwindcss CDN link in your index.html file
 ```
 <script src="https://cdn.tailwindcss.com"></script>
