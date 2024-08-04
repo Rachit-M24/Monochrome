@@ -11,10 +11,6 @@ for trying out it locally on your laptop or computer.
 ```
 npm create vite@latest
 cd the-app-name
-npm install
-```
-or
-```
 npm i
 ```
 
