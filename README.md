@@ -25,4 +25,4 @@ that's it now you just have to type this command and you should be able to  see 
 ```
 npm run dev
 ```
-THANK YOU , RACHIT
+THANK YOU for going through all this trouble to just see a simple project from a normie .
