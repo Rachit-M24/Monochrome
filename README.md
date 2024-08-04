@@ -4,9 +4,9 @@ let me help you with that in case you are new to this
 
 for trying out it locally on your laptop or computer.
 
-# Download all files and folders  then extract the zip file after that the game begins.
-## First open an IDE whichever you are comfortable with then open a terminal in it and type these commands
-   Note: you should  have node installed on your laptop/PC
+## Download all files and folders  then extract the zip file after that the game begins.
+First, open an IDE whichever you are comfortable with then open a terminal in it and type these commands
+Note: you should  have node installed on your laptop/PC
    
 ```
 npm create vite@latest
